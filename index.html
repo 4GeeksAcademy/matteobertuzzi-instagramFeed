@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram Feed</title>
+  </head>
+  <body>
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-light d-flex">
+              <h3 class="mx-1 my-3"><i class="fa-brands fa-instagram"></i></h3>
+              <h4 class="mx-1 my-3">Instagram</h4>
+              <button type="button" class="btn btn-success ml-auto my-3" data-toggle="modal" data-target="#newPost">Create a new post</button>
+                
+              <div class="modal fade" id="newPost" tabindex="-1" role="dialog" aria-labelledby="newPostLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="newPostLabel">Create a new post</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="caption" class="col-form-label">Caption:</label>
+                            <textarea type="text" class="form-control input-lg" id="caption" placeholder="Add the caption of your post here"></textarea>
+                          </div>
+                        </form>
+                        <div d-flex justify-content-center>
+                          <button class="btn bg-light" type="button">
+                            <i class="fa-solid fa-camera"></i>
+                          </button>
+                          <button class="btn bg-light" type="button">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <button class="btn btn-secondary dropdown-toggle ml-1 my-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Accessibility</a>
+                  <a class="dropdown-item" href="#">Privacy and data</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger" href="#">Log out</a>
+                </div>
+            </div>
+        </div>
+        
+          <div class="container d-flex justify-content-center ">
+            <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="explore-tab" data-toggle="tab" href="#explore" role="tab" aria-controls="explore" aria-selected="true">
+                  <i class="fa-solid fa-table-cells"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="feed-tab" data-toggle="tab" href="#feed" role="tab" aria-controls="feed" aria-selected="false">
+                  <i class="fa-solid fa-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="explore" role="tabpanel" aria-labelledby="explore-tab">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://1x.com/quickimg/6b20d51c656985154ecd5fef31d421f1.jpg" class="card-img" alt="mountains">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://g4.img-dpreview.com/09BAC962856C4C6DACFB4AC150AF2624.jpg" class="card-img" alt="romantic lake">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://g2.img-dpreview.com/CE2ABC89D31F422EBC0D88F915BDBF17.jpg" class="card-img" alt="trees">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2021/08/aspect.ratio_.mishra.waterfall.square.jpg" class="card-img" alt="waterfall">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://g2.img-dpreview.com/81C81CB44922409EA3C99FA3E42369CD.jpg" class="card-img" alt="snowy sky">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://g3.img-dpreview.com/A855866C910C4AF0895A2498EFDB0D73.jpg" class="card-img" alt="valley">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2012/10/image1.jpg" class="card-img" alt="lake b&w">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://ipt.imgix.net/200626/x/0/best-aspect-ratios-for-landscape-photography-in-iceland-5.jpg" class="card-img" alt="mountains">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://g4.img-dpreview.com/75275EE1A79A4DD68AC8878E879B0704.jpg" class="card-img" alt="snow">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://wallpaperswide.com/download/night_landscape-wallpaper-1280x1280.jpg" class="card-img" alt="night desert">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://thelandscapephotoguy.com/wp-content/uploads/2019/01/waterscapes/waterscape%20damme%20belgium%20canal.jpg" class="card-img" alt="trees">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="card">
+                          <img src="https://1x.com/quickimg/6b20d51c656985154ecd5fef31d421f1.jpg" class="card-img" alt="mountains">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="feed-tab">
+                  <div class="container">
+                    <div class="justify-content-center">
+                      <div class="col-md-8 my-3">
+                        <div class="card">
+                          <div class="card-header d-flex justify-content-between bg-white">
+                            <h4 class="ml-2 my-auto">Beautiful Mountains</h4>
+                            <p class="mr-2 my-auto">08/26</p>
+                          </div>
+                          <div class="card-img">
+                            <img src="https://1x.com/quickimg/6b20d51c656985154ecd5fef31d421f1.jpg" class="card-img" alt="mountains">
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text font-weight-bold">240 likes</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8 my-3">
+                        <div class="card">
+                          <div class="card-header d-flex justify-content-between bg-white">
+                            <h4 class="ml-2 my-auto">Yosemite Park - Evening Vibes</h4>
+                            <p class="mr-2 my-auto">07/07</p>
+                          </div>
+                          <div class="card-img">
+                            <img src="https://g1.img-dpreview.com/FF9CE2684532407EA326F7E9562EB91A.jpg" class="card-img" alt="lake">
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text font-weight-bold">11,550 likes</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8 my-3">
+                        <div class="card">
+                          <div class="card-header d-flex justify-content-between bg-white">
+                            <h4 class="ml-2 my-auto">Urban Romantic Moon</h4>
+                            <p class="mr-2 my-auto">10/27</p>
+                          </div>
+                          <div class="card-img">
+                            <img src="https://storage.googleapis.com/pai-images/050f017ff93a42d79290b91c2ac1ea15.jpeg" class="card-img" alt="Moon">
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text font-weight-bold">450 likes</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
